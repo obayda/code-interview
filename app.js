@@ -14,6 +14,7 @@ app.listen(3000);
 app.use(require('body-parser').json());
 
 app.post('/account/create', require('./api/account/create'));
+app.post('/notifications', require('./api/notifications/create'))
 
 console.log('app running on port 3000...');
 
